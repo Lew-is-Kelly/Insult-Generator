@@ -6,7 +6,7 @@ filePath = "key.txt"
 with open(filePath, 'r') as file:
   openai.api_key = file.read()
 
-prompt = "Generate one sharp, funny, in-game trash talk line for CS2. Make it witty and mean. Make it unique aswell."
+prompt = "Generate a line similar to \"YOU WILL LOSE\", \"YOU ARE SO BAD\", \"YOU MAY HAVE WON THAT ROUND BUT WE WILL WIN THE GAME\", \"YOU CANNOT WIN\""
 
 response = openai.ChatCompletion.create(
   model="gpt-4o-mini",
